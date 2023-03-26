@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+body, h1 {
+  margin: 0;
+}
+
+body {
+  /* display: flex;
+  flex-direction: column;
+  height: 100vh; */
+  font-family: helvetica, sans-serif;
+  background-color: aliceblue;
+}
+
+.flex-container {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.aside-left {
+  flex-basis: 220px;
+  flex-shrink: 0;
+  background-color: #fff;
+}
+
+.catalog {
+
+}
+
+.catalog > h3 {
+  text-align: center;
+  margin: 5px 0 5px 0;
+  color: maroon;
+}
+
+.cat-items {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+}
+
+.cat-item {
+  border: maroon 2px solid;
+  border-radius: 2px;
+  margin: 2px 5px;
+  padding: 0;
+}
+
+.cat-item > a {
+  text-decoration: none;
+  color: maroon;
+}
+
+.cat-item > a:hover {
+  color: red;
+}
+
+.main-sec {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-basis: 820px;
+  flex-grow: 1;
+  margin: 0 10px 0 10px;
+}
+
+.shop-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 360px;
+  height: 400px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.item-cart {
+  align-self: flex-end;
+  text-decoration: none;
+  background-color: firebrick;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.item-cart:hover {
+  background-color: red;
+}
+
+.aside-right {
+  flex-basis: 220px;
+  flex-shrink: 0;
+  background-color: #fff;
+}
+
+.interesting {
+
+}
+
+.interesting > h4 {
+  text-align: center;
+  color: maroon;
+}
+
+.interesting > .shop-items {
+  border: maroon 2px solid;
+  border-radius: 5px;
+  height: 280px;
+}
+
+.header-panel {
+  margin: 0px;
+  background-color: rgb(188, 36, 36);
+}
+
+.header-logo-container {
+  width: 180px;
+  text-align: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: baseline;
+  list-style-type: none;
+  margin: 0 10px 0 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 10px;
+}
+
+.nav-item > a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-item > a:hover {
+  color: lightgray;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  background-color: firebrick;
+  height: 40px;
+}
